@@ -8,7 +8,7 @@ R, C, N, T, CC, num_cases = map(int, input().split())
 count_wins = 0
 
 for _ in range(num_cases):
-    grader_program = subprocess.Popen(['./sweepmine'], stdout=subprocess.PIPE, stdin=subprocess.PIPE)
+    grader_program = subprocess.Popen(['../bin/sweepmine'], stdout=subprocess.PIPE, stdin=subprocess.PIPE)
     grader_program.stdin.write(f"{R} {C} {N} {T} {CC} 0\n".encode())
     grader_program.stdin.flush()
 

@@ -7,7 +7,7 @@ static int r, c, n, t, O, D, state[MAXR][MAXC], is_flag[MAXR][MAXC], is_shown[MA
 static vector<vector<int>> charge;
 // RNG - SEEDED BASED ON TIME
 static mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-static ofstream ouf("sweepmine.out");
+static ofstream ouf("../data/sweepmine.out");
 
 static bool in(int x, int y) { return (x >= 1 && x <= r && y >= 1 && y <= c); }
 static vector<pair<int, int>> get_neighbours(int x, int y) {
@@ -125,7 +125,7 @@ int main() {
     }
 
     int ouf_pos_save = 0;
-    ouf << r << " " << c << " " << n << " " << O << " " << D << endl;
+    ouf << r << " " << c << " " << n << " " << t << " " << O << " " << D << endl;
     for(int i = 1; i <= r; i++) {
         for(int j = 1; j <= c; j++) {
             ouf << state[i][j] << " ";
