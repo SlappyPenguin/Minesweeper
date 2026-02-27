@@ -77,7 +77,7 @@ For `weighted_torus_ungraded`, this should be of the form:
 - Lines $R+2$ to $2R+1$: A grid of charges with the same format as `vector<vector<int>> charge`
 
 ## Technical Details
-The solver always tries to find a certain move (revealing a guaranteed safe square or flagging a guaranteed mine), before resorting to probabilistic guesswork.
+The solver always tries to find a certain move (revealing a guaranteed safe cell or flagging a guaranteed mine), before resorting to probabilistic guesswork.
 
 ### (1) Simple Logic
 We try to apply the 2 simplest logical rules:
