@@ -61,7 +61,7 @@ python visualiser.py
 Note that individual game spots can also be solved using the ungraded programs (see below).
 
 ## Usage Notes
-For `visualiser.py` usage information, see the final page of attached [`statement.pdf`](statement.pdf).
+For `visualiser.py` UI and usage information, see the final page of attached [`statement.pdf`](statement.pdf).
 
 The graded programs `normal_graded` and `weighted_torus_graded` accept input via `stdin` and write to `data/sweepmine.out`. The input to these programs (executed alone by running `../build/normal_graded` etc.) matches the grader expected input in the original problem statement.
 
