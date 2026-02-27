@@ -14,23 +14,46 @@ The solver also supports toroidal maps (wrap-around) and weighted mines. This pr
 | `/run` | Scripts to benchmark and visualise |
 | `/src` | Underlying C++ |
 
-## Usage (Local)
+## Installation
+Requirements for usage:
 
-- Clone repository locally
-- Navigate to `/run` directory
-- Compile the binary with solver/grader logic:
-    - If only running normal games (no torus/weighted variations), execute `make MODE=normal`
-    - If testing modded variant, execute `make MODE=modded`
-- Now:
-    - Run `python3 benchmarker.py` to benchmark the bot
-    - Populate `/data/sweepmine.out` by running `../bin/sweepmine` (run a game via sample grader)
-    - Visualise a game using `python3 visualiser.py` 
+- g++ with C++20
+- make
+- Python 3.6+
 
-## Mechanics
+First, clone the repository:
 
-Documentation of the grader (`sweepmine`), `benchmark.py`, and `visualiser.py` systems can be found in the original [problem statement](/statement.pdf) from page 3 onwards. The PDF demonstrates how each expects input, and what the purpose of each is.
+``` bash
+git clone https://github.com/SlappyPenguin/Sweepmine.TM.git
+cd Sweepmine.TM
+```
 
-Note: This statement was originally written to introduce the interface in a contest setting (Australian Informatics Olympiad Committee Student-Run Contest).
+Compile all programs using the top-level Makefile:
+
+``` bash
+cd run
+make
+```
+
+To run a benchmark on the solver:
+
+``` bash
+cd run
+python simple_benchmarker.py
+# Example
+Enter level (easy/medium/hard): hard
+Enter number of games to play: 1000
+```
+
+A benchmarker with more custom parameters (`run/benchmarker.py`) is also available. After benchmarking, visualise the final game:
+
+``` bash
+cd run
+python visualiser.py
+```
+
+Note that individual game spots can also be solved using the ungraded programs (see `/build`).
+
 
 ## Technical Details
 
