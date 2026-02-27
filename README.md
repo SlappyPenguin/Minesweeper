@@ -1,8 +1,8 @@
 # Sweepmine.TM
 
-A fast Minesweeper AI with success rate on par with frontier research models. The solver abstracts the Minesweeper grid into a constraint satisfaction problem (CSP), which is solved using logical deduction, Gaussian-elimination, and recursive backtracking. 
+A fast Minesweeper AI with success rate on par with frontier research models. The solver abstracts the Minesweeper grid into a constraint satisfaction problem (CSP), while solving forced risk positions with probabilistic strategies. The solver also supports toroidal maps (wrap-around) and weighted mines. 
 
-The solver also supports toroidal maps (wrap-around) and weighted mines. This project was originally intended as a problem for a contest setting (see [`statement.pdf`](statement.pdf)). 
+This project was originally intended as a problem for a contest setting (see [`statement.pdf`](statement.pdf)). 
 
 ## Directory
 
