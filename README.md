@@ -120,8 +120,8 @@ The success rate of the solver (probability of finishing a game without clicking
 
 | Strategy                        | 8-8-T10       | 16-16-T40     | 30-16-T99     |
 |---------------------------------|---------------|---------------|---------------|
-| PSEQ-D256 (Tu et al. 2017)      | 81.79%        | 78.2%         | 40.06%        |
 | **Sweepmine (this project)**    | **81.62%**        | **77.48%**        | **38.20%**     | 
+| PSEQ-D256 (Tu et al. 2017)      | 81.79%        | 78.2%         | 40.06%        |
 | OH (Buffet et al. 2013)        | 80.2%        | 74.4%        | 38.7%        |
 | cSimEnuLoClf (Legendre et al. 2012) | 80%    | 75.6%        | 37.5%        |
 | CSP (Studholme 2000)           | 80.0%        | 44.3%        | 33.9%        |
