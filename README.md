@@ -52,6 +52,17 @@ Enter number of games to play: 1000
 
 A benchmarker with more custom parameters (`run/benchmarker.py`) is also available.
 
+A single game can be run using the raw graded programs `build/normal_graded` and `build/weighted_torus_graded`:
+
+``` bash
+cd run
+../build/normal_graded
+# Example - running "hard" with no modifiers or debug mode
+16 30 99 0 0 0
+```
+
+If `data/sweepmine.out` is populated (through either benchmarking or a direct execution of the graded binaries), the game contained there can be visualised:
+
 ``` bash
 cd run
 python visualiser.py
