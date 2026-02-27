@@ -2,7 +2,7 @@
 
 A fast Minesweeper AI with success rate on par with frontier research models. The solver abstracts the Minesweeper grid into a constraint satisfaction problem (CSP), which is solved using logical deduction, Gaussian-elimination, and recursive backtracking. 
 
-The solver also supports toroidal maps (wrap-around) and weighted mines. This project was originally intended as a problem for a contest setting (see `statement.pdf`). 
+The solver also supports toroidal maps (wrap-around) and weighted mines. This project was originally intended as a problem for a contest setting (see [`statement.pdf`](statement.pdf)). 
 
 ## Directory
 
@@ -58,6 +58,16 @@ python visualiser.py
 
 Note that individual game spots can also be solved using the ungraded programs (see `/build/README.md`).
 
+## Usage Notes
+
+For `visualiser.py` usage information, see the final page of attached [`statement.pdf`](statement.pdf).
+
+Between the creation of the original problem statement and now, `benchmarker.py` has undergone changes. It will prompt the user more verbosely for input. There is futhermore an easier `simple_benchmarker.py` which only runs normal minesweeper games at fixed presets. The presets are the same as presented in the problem statement.
+
+The graded programs `normal_graded` and `weighted_torus_graded` accept input via `stdin` and write to `data/sweepmine.out`. The input to these programs (executed alone by running `../build/normal_graded` etc.) matches the grader expected input in the original problem statement.
+
+The non-graded programs `normal_ungraded` and `weighted_torus_ungraded` accept input the same way that `next_move()` in problem statement accepts input. The first line contains $R$, $C$, $N$, $T$. After this follows a grid with the same format as `vector<vector<int>> grid`, and then a grid of charges with the same format as `vector<vector<int>> charge`.
+
 ## Performance
 The success rate of the solver (probability of finishing a game without clicking a mine) is on par with frontier research models for all 3 standard board sizes:
 
@@ -73,7 +83,7 @@ The success rate of the solver (probability of finishing a game without clicking
 | LBP-MC (Kamenetsky and Teo 2007) | 78.6%      | 44.8%        |               |
 | PGMS (Ramsdell 1995)           | 71%          | 36 %          | 26%          |
 
-Our benchmark was measured by running `run/simple_benchmarker.py` for 10^4 games on each board size. The rest of the table was supplied by [this paper](https://cdn.aaai.org/ocs/ws/ws0294/15091-68459-1-PB.pdf).
+Our benchmark was measured by running `run/simple_benchmarker.py` for $10^4$ games on each board size. The rest of the table was supplied by [this paper](https://cdn.aaai.org/ocs/ws/ws0294/15091-68459-1-PB.pdf).
 
 Our solver averages 6.03 seconds per 100 games on the Expert board size (16-30-T99). For comparison, the human world record for a singular Expert game is [26.59 seconds](https://minesweepergame.com/world-records.php).
 
