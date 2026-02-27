@@ -90,12 +90,12 @@ We try more complex logic to find certain moves. The grid is abstracted into a C
 
 Specifically, each unknown cell forms a variable $x_{ij} \in \{0, 1\}$, and each known tile combines its adjacent unknown cells into an equation. Say a known cell showing value $v_{k}$ has neighbours $\{x_1,x_2,\dots,x_n\}$. Then, $v_k = \sum_{i=1}^nc_ix_i$.
 
-By building a system of these linear equations, we have a general way to deterministically solve all logic-based game situations. Solving implements row-reduction via Gaussian elimination, and determining fixed-value variables via back-substitution. These known cells can then be safely flagged or revealed.
+By building a system of these linear equations, we have a general way to deterministically solve all logic-based game situations. Solving implements row-reduction via Gaussian elimination, and determining fixed-value variables via back-substitution.
 
 ### (3) Backtracking + Guessing
 If (1) and (2) do not yield certain moves, we are forced to make probabilistic decisions. First, all possible solutions to the CSP (taking valid variables as all unrevealed cells bordering revealed ones) are generated using recursive backtracking.
 
-This backtrack is heavily optimised using a combination of early-exit conditions and heuristic state prioritisations. Furthermore, we reduce state-space by splitting variables into independent sets. These optimisations make this theoretically exponential-time algorithm run extremely fast in practice.
+This is heavily optimised using a combination of early-exit conditions and heuristic state prioritisations. Furthermore, we reduce state-space by splitting variables into independent sets. These optimisations make this theoretically exponential-time algorithm run extremely fast in practice.
 
 Basic combinatorics allows us to assign an 'entropy' (moreso the microscopic configuration number $\Omega$) to each cell state. The probability of a cell being in said state then directly correlates to this entropic value. Ties are broken with [heuristic preference for corners and edges](https://cdn.aaai.org/ocs/ws/ws0294/15091-68459-1-PB.pdf).
 
