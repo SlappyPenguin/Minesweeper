@@ -61,13 +61,13 @@ The success rate of the solver (probability of finishing a game without clicking
 |---------------------------------|---------------|---------------|---------------|
 | *Sweepmine (this project)*    | *81.62%*        | *77.48%*        | *38.20%*     | 
 | PSEQ-D256 (Tu et al. 2017)      | 81.79%        | 78.2%         | 40.06%        |
-| OH (Buffet et al. 2013)        | 80.2 %        | 74.4 %        | 38.7 %        |
-| cSimEnuLoClf (Legendre et al. 2012) | 80 %    | 75.6 %        | 37.5 %        |
-| CSP (Studholme 2000)           | 80.0 %        | 44.3 %        | 33.9 %        |
-| CSCSP (Becerra 2015)           |               | 75.94 %       | 32.90 %       |
-| LSWPE (Pedersen 2004)          |               | 67.7 %        | 25.0 %        |
-| LBP-MC (Kamenetsky and Teo 2007) | 78.6 %      | 44.8 %        |               |
-| PGMS (Ramsdell 1995)           | 71 %          | 36 %          | 26 %          |
+| OH (Buffet et al. 2013)        | 80.2%        | 74.4%        | 38.7%        |
+| cSimEnuLoClf (Legendre et al. 2012) | 80%    | 75.6%        | 37.5%        |
+| CSP (Studholme 2000)           | 80.0%        | 44.3%        | 33.9%        |
+| CSCSP (Becerra 2015)           |               | 75.94%       | 32.90%       |
+| LSWPE (Pedersen 2004)          |               | 67.7%        | 25.0%        |
+| LBP-MC (Kamenetsky and Teo 2007) | 78.6%      | 44.8%        |               |
+| PGMS (Ramsdell 1995)           | 71%          | 36 %          | 26%          |
 
 Our benchmark was measured by running `run/simple_benchmarker.py` for 10^4 games on each board size. The rest of the table was supplied by [this paper](https://cdn.aaai.org/ocs/ws/ws0294/15091-68459-1-PB.pdf).
 
