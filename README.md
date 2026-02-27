@@ -52,6 +52,10 @@ cd run
 python visualiser.py
 ```
 
+<p align="center">
+  <img src="images/visualiser.png" width="500"><br>
+</p>
+
 Note that individual game spots can also be solved using the ungraded programs (see `/build/README.md`).
 
 ## Usage Notes
