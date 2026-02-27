@@ -82,11 +82,11 @@ The solver always tries to find a certain move (revealing a guaranteed safe squa
 ### (1) Simple Logic
 We try to apply the 2 simplest logical rules:
 
-- If any square has # surrounding mines = # surrounding flags, all other surrounding squares are safe
-- If any square has # surrounding mines = # surrounding uncovered squares, they are all mines
+- If any square's # surrounding mines = # surrounding flags, all other surrounding squares are safe
+- If any square's # surrounding mines = # surrounding uncovered squares, they are all mines
 
 ### (2) Gaussian Elimination
-We try more complicated logic to find certain moves. The grid is abstracted into a CSP, which can be represented as a system of linear equations. To find if any variable must have a fixed value, we run Gaussian Elimination.
+We try more complex logic to find certain moves. The grid is abstracted into a CSP, which can be represented as a system of linear equations. To find if any variable must have a fixed value, we run Gaussian Elimination.
 
 ### (3) Backtracking + Guessing
 If (1) and (2) do not yield certain moves, we are forced to take risk. First, all possible solutions to the CSP are generated using (heavily optimised) recursive backtracking. 
