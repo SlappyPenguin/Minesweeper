@@ -2,9 +2,7 @@
 
 A fast Minesweeper AI with success rate near frontier research models. The solver abstracts the Minesweeper grid into a constraint satisfaction problem (CSP), which is solved using logical deduction, Gaussian-elimination, and recursive backtracking. The solutions to the CSP are used to determine a garunteed safe move (if any exists) or a probabilistically optimal move otherwise. 
 
-The solver also supports toroidal maps (wrap-around) and weighted mines.
-
-This project was originally intended as a problem for a contest setting (see `statement.pdf`). 
+The solver also supports toroidal maps (wrap-around) and weighted mines. This project was originally intended as a problem for a contest setting (see `statement.pdf`). 
 
 ## Directory
 
