@@ -3,7 +3,6 @@ Trivial checks on whether any square is 100% safe or 100% a mine.
 */
 
 #include "../../include/normal.h"
-#include <bits/stdc++.h>
 using namespace std;
 
 pair<bool, Move> do_logic() {

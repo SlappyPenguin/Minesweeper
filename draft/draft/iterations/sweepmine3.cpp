@@ -1,4 +1,12 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <cassert>
+#include <cmath>
+#include <iomanip>
+#include <iostream>
+#include <set>
+#include <unordered_set>
+#include <utility>
+#include <vector>
 using namespace std;
 const int MAX_NUM_ROWS = 100, MAX_NUM_COLS = 100, MAX_NUM_BOUNDARIES = 1000, MAX_NUM_BOMBS = 1000;
 const int UNDECIDED = -1, BOMB = -2, NO_BOMB = -3, ERROR = -404;

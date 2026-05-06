@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+#include <array>
+#include <unordered_set>
+#include <utility>
+#include <vector>
 using namespace std;
 using ldoub = long double;
 template<typename T, size_t N> 

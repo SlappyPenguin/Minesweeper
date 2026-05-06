@@ -7,7 +7,7 @@
 
 #include "../../include/normal.h"
 #include "../../include/grader.h"
-#include <bits/stdc++.h>
+#include <tuple>
 using namespace std;
 
 constexpr int HIDDEN_VALUE = 100;

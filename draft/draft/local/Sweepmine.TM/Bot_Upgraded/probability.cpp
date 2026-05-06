@@ -1,5 +1,8 @@
 #include "header.h"
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <iomanip>
+#include <iostream>
+#include <limits>
 using namespace std;
 
 static vector<vector<int>> adj;

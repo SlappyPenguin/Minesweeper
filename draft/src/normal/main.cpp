@@ -1,5 +1,6 @@
 #include "header.h"
-#include <bits/stdc++.h>
+#include <cstdio>
+#include <iostream>
 using namespace std;
 
 int num_rows, num_cols, num_bombs;

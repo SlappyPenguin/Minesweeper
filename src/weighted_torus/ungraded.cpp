@@ -4,7 +4,8 @@ writes the next move to data/output.txt.
 */
 
 #include "../../include/weighted_torus.h"
-#include <bits/stdc++.h>
+#include <fstream>
+#include <string>
 using namespace std;
 
 constexpr int HIDDEN_VALUE = 100;

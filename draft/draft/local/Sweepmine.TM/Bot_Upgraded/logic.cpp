@@ -1,5 +1,4 @@
 #include "header.h"
-#include <bits/stdc++.h>
 using namespace std;
 
 Move do_logic() {

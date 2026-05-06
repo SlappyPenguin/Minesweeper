@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+#include <cmath>
+#include <unordered_set>
+#include <utility>
+#include <vector>
 using namespace std;
 const int BLANK = 100, FLAG = 101;
 const int INVALID = 404;

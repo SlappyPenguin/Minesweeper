@@ -4,7 +4,6 @@ own constraint, i.e. that the squares around it (variables based on their weight
 */
 
 #include "../../include/weighted_torus.h"
-#include <bits/stdc++.h>
 using namespace std;
 
 vec<Constraint> constraints;

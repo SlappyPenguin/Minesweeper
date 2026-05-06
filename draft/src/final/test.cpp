@@ -1,4 +1,13 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <cassert>
+#include <cmath>
+#include <iomanip>
+#include <iostream>
+#include <limits>
+#include <set>
+#include <unordered_set>
+#include <utility>
+#include <vector>
 using namespace std;
 const int BLANK = 100, FLAG = 101, EPS = 1e-20;
 const int INVALID = -404;

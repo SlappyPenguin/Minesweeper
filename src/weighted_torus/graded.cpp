@@ -4,7 +4,6 @@ Do backtracking to assign a probability that every square is a mine, then pick t
 
 #include "../../include/weighted_torus.h"
 #include "../../include/grader.h"
-#include <bits/stdc++.h>
 using namespace std;
 
 constexpr int HIDDEN_VALUE = 100;

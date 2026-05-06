@@ -14,7 +14,10 @@ exit)
 */
 
 #include "../../include/weighted_torus.h"
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <cassert>
+#include <iomanip>
+#include <iostream>
 using namespace std;
 
 static vec<vec<int>> adj;

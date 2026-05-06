@@ -4,7 +4,6 @@ own constraint, i.e. that the squares around it (the boolean variables) must sum
 */
 
 #include "../../include/normal.h"
-#include <bits/stdc++.h>
 using namespace std;
 
 vec<Constraint> constraints;

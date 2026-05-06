@@ -14,7 +14,10 @@ exit)
 */
 
 #include "../../include/normal.h"
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <cassert>
+#include <iomanip>
+#include <iostream>
 using namespace std;
 
 static vec<vec<int>> adj;

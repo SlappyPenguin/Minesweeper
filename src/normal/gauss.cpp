@@ -3,7 +3,8 @@ Uses Gaussian elimination to determine whether the state of any hidden square ca
 */
 
 #include "../../include/normal.h"
-#include <bits/stdc++.h>
+#include <iostream>
+#include <set>
 using namespace std;
 
 static int num_vars, num_cons;

@@ -1,5 +1,8 @@
 #include "bigint.h"
-#include <bits/stdc++.h>
+#include <cassert>
+#include <iostream>
+#include <utility>
+#include <vector>
 using namespace std;
 const int MAX_NUM_ROWS = 100, MAX_NUM_COLS = 100, MAX_NUM_BOUNDARIES = 1000;
 const int UNKNOWN_UNDECIDED = -1, UNKNOWN_BOMB = -2, UNKNOWN_NO_BOMB = -3;

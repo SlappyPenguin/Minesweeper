@@ -1,7 +1,15 @@
 #pragma GCC optimize("O3", "unroll-loops")
 #pragma GCC target("avx2", "bmi", "bmi2", "lzcnt", "popcnt")
 
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <cassert>
+#include <cmath>
+#include <iomanip>
+#include <iostream>
+#include <set>
+#include <unordered_set>
+#include <utility>
+#include <vector>
 using namespace std;
 const int BLANK = 100, FLAG = 101;
 const int INVALID = 404;

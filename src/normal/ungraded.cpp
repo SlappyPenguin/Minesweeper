@@ -4,7 +4,9 @@ writes the next move to data/output.txt.
 */
 
 #include "../../include/normal.h"
-#include <bits/stdc++.h>
+#include <fstream>
+#include <string>
+#include <tuple>
 using namespace std;
 
 constexpr int HIDDEN_VALUE = 100;
